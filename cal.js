@@ -230,7 +230,7 @@ $open.addEventListener('click', () => {
     }
     if (opening) return;
     opening = true;
-    interval = setInterval(open , 1000);
+    interval = setInterval(open , 100);
 });
 
 $stop.addEventListener('click', () => {
