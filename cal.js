@@ -9,7 +9,6 @@ const $time = document.querySelector('#time');
 const $shining = document.querySelector('#shining');
 const $hidden = document.querySelector('#hidden');
 const $brokenBox = document.querySelector('#broken-box');
-console.log($brokenBox);
 const $average = document.querySelector('#average');
 const goals = new Set();
 let opening = false;
