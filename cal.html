@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./maple.css">
+    <title>시드링 시뮬레이터</title>
+</head>
+<body>
+    <div id="goals"></div>
+    <form>
+        <select id="rings"></select>
+        <select id="levels"></select>
+        <button>추가</button>
+    </form>
+    <div>
+        <input type="radio" name="ring-box" id="shining" checked>
+        <label>빛나는 반지상자</label>
+        <input type="radio" name="ring-box" id="hidden">
+        <label>숨겨진 반지상자</label>
+    </div>
+    <div id="info">
+        <span>판 수: </span>
+        <span id="time">0판</span>
+    </div>
+    <div>
+        <span>평균 판 수: </span>
+        <span id="average">0판</span>
+    </div>
+    <div>
+        <span>깨상 조각: </span>
+        <span id="broken-box">0개</span>
+    </div>
+    <div id="seed-ring">
+        <div id="result">
+            <div>
+                <button id="open">상자 까기 시작</button>
+                <button id="stop">정지</button>
+            </div>
+            <span>결과: </span>
+            <div id="seed-result"></div>
+        </div>
+        
+    </div>
+
+    <script src="./cal.js"></script>
+</body>
+</html>
