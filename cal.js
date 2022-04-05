@@ -12,6 +12,7 @@ const $brokenBox = document.querySelector('#broken-box');
 const $average = document.querySelector('#average');
 const goals = new Set();
 let opening = false;
+let first = true;
 let interval;
 
 
@@ -191,6 +192,10 @@ for (let i = 0; i < 4; i++) {
 
 $form.addEventListener('submit', (e) => {
     e.preventDefault();
+    if (first) {
+        document.querySelector('#first').remove();
+        first = false;
+    }
     const ringGoal = document.createElement('div');
     const ringName = document.createElement('span');
     const ringLevel = document.createElement('span');
