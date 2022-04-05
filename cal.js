@@ -163,10 +163,12 @@ const open = function () {
     if ($hidden.checked && brokenBox >= 10) {
         openHidden();
         brokenBox -= 10;
+        $brokenBox.textContent = `${brokenBox}개`
     }
     if ($shining.checked && brokenBox >= 100) {
         openShining();
         brokenBox -= 100;
+        $brokenBox.textContent = `${brokenBox}개`
     }
 }
 
